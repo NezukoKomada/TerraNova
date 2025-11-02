@@ -1,0 +1,145 @@
+#logo{
+    width: 200px;
+    height: 200px;
+}
+:root {
+  --green1: #2ecc71;
+  --green2: #27ae60;
+  --white: #ffffff;
+  --grey: #f5f7f5;
+  --dark: #1e1e1e;
+  --accent: #b6f5c9;
+}
+
+body {
+  font-family: "Rye", serif;
+  background: linear-gradient(180deg, #e6ffe6 0%, #ffffff 100%);
+  color: var(--dark);
+  line-height: 1.6;
+}
+
+header {
+  background: linear-gradient(135deg, var(--green1), var(--green2));
+  color: var(--white);
+  text-align: center;
+  padding: 4rem 1rem;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+nav {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-radius: 30px;
+  margin: 1rem auto;
+  width: 90%;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+nav a {
+  color: var(--green2);
+  text-decoration: none;
+  padding: 1rem 1.5rem;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background: var(--green2);
+  color: var(--white);
+  border-radius: 25px;
+}
+
+section {
+  padding: 3rem 8%;
+  background: var(--grey);
+  border-radius: 40px;
+  margin: 2rem 5%;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.card {
+  background: var(--white);
+  border-radius: 15px;
+  padding: 1.5rem;
+  box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+}
+
+/* Subfields inside Physical Model */
+.subfields {
+  margin-top: 1.5rem;
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .subfields {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.subfield {
+  background: #f0fff5;
+  border: 1px solid var(--accent);
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: transform 0.3s;
+}
+
+.subfield:hover {
+  transform: translateY(-5px);
+}
+
+.subfield h4 {
+  color: var(--green2);
+  margin-bottom: 0.5rem;
+}
+
+/* Team & Footer */
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  justify-content: center;
+}
+
+.team span {
+  background: linear-gradient(135deg, var(--green1), var(--green2));
+  color: var(--white);
+  padding: 0.7rem 1.2rem;
+  border-radius: 25px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+footer {
+  background: var(--green2);
+  color: var(--white);
+  text-align: center;
+  padding: 1.5rem;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  margin-top: 2rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: separate; /* Allows spacing between rows */
+  border-spacing: 0 0.8rem; /* Adds vertical spacing between rows */
+  text-align: left;
+}
+
+th, td {
+  padding: 1.2rem 1rem; /* Increased padding for more space */
+  border-bottom: 1px solid #dcdcdc;
+}
+
+th {
+  background-color: var(--accent);
+  color: var(--dark);
+  text-align: center;
+}
